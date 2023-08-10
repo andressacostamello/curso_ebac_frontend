@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Notícias</title>
+    <style>
+        /* Reset de estilos */
+        body, h1, h2, h3, p, a, img, figure, figcaption {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Seções */
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+
+        /* Artigos */
+        article {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+        }
+
+        article img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        article h3 {
+            font-size: 20px;
+            margin-top: 0;
+            color: #333;
+        }
+
+        article p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        article a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilos específicos para cada seção */
+        section:nth-child(odd) {
+            background-color: #F5E7E2;
+        }
+
+        section:nth-child(even) {
+            background-color: #E1EEF4;
+        }
+
+        /* Alinhamento central */
+        header, section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Portal de Notícias</h1>
+    </header>
+    <section>
+        <!-- Seção Dólar -->
+        <article>
+            <img src="./imagens/dolar.jpg" alt="Notas de dólar" />
+            <header>
+                <time>13/07/2022 às 12:35</time>
+            </header>
+            <h3>Dólar em alta de 0.50%</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+        <article>
+            <img src="./imagens/euro.jpg" alt="Várias notas de euro" />
+            <header>
+                <time>13/07/2022 às 12:35</time>
+            </header>
+            <h3>Euro em queda de 0.40%</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+        <article>
+            <img src="./imagens/petroleo.jpg" alt="Extração de petróleo" />
+            <header>
+                <time>13/07/2022 às 12:35</time>
+            </header>
+            <h3>Alta no preço do barril do petróleo</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+    </section>
+    <section>
+        <!-- Seção Entretenimento -->
+        <h2>Entretenimento</h2>
+        <article>
+            <img src="./imagens/cinema.jpg" alt="Cinema" />
+            <header>
+                <time>15/07/2022 às 18:00</time>
+            </header>
+            <h3>Lançamento do filme de ação "Aventura Radical"</h3>
+            <p>
+                Novo filme de ação promete grandes emoções e muita adrenalina nas telonas. Veja os detalhes sobre o lançamento e elenco!
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+        <article>
+            <img src="./imagens/show.jpg" alt="Show musical" />
+            <header>
+                <time>16/07/2022 às 20:30</time>
+            </header>
+            <h3>Show ao vivo da banda "Sons do Verão"</h3>
+            <p>
+                Prepare-se para uma noite incrível de música ao vivo! A banda "Sons do Verão" se apresentará no próximo fim de semana.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+    </section>
+    <section>
+        <!-- Seção Tecnologia -->
+        <h2>Tecnologia</h2>
+        <article>
+            <img src="./imagens/tecnologia.jpg" alt="Tecnologia" />
+            <header>
+                <time>14/07/2022 às 09:15</time>
+            </header>
+            <h3>Novo smartphone XYZ é lançado com recursos inovadores</h3>
+            <p>
+                Conheça o mais recente lançamento da empresa XYZ: um smartphone com câmera de alta resolução, bateria de longa duração e muito mais.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+        <article>
+            <img src="./imagens/ai.jpg" alt="Inteligência Artificial" />
+            <header>
+                <time>15/07/2022 às 14:00</time>
+            </header>
+            <h3>Avanços na Inteligência Artificial revolucionam indústrias</h3>
+            <p>
+                A IA está transformando diversos setores, desde a saúde até a automação industrial. Descubra como as empresas estão se beneficiando dessas tecnologias.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+    </section>
+    <section>
+        <!-- Seção Esportes -->
+        <h2>Esportes</h2>
+        <article>
+            <img src="./imagens/esporte1.jpg" alt="Atletas em competição" />
+            <header>
+                <time>16/07/2022 às 10:45</time>
+            </header>
+            <h3>Grande final do campeonato de futebol</h3>
+            <p>
+                A emocionante final do campeonato de futebol acontecerá no próximo final de semana. Times se preparam para o jogo decisivo.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+        <article>
+            <img src="./imagens/esporte2.jpg" alt="Jogador de basquete com a bola" />
+            <header>
+                <time>17/07/2022 às 15:30</time>
+            </header>
+            <h3>Estrela do basquete anuncia aposentadoria</h3>
+            <p>
+                O jogador famoso do basquete anunciou sua aposentadoria após uma carreira incrível. Relembre os momentos marcantes.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+    </section>
+    <section>
+        <!-- Seção Economia -->
+        <h2>Economia</h2>
+        <article>
+            <img src="./imagens/economia1.jpg" alt="Gráficos de economia" />
+            <header>
+                <time>18/07/2022 às 09:00</time>
+            </header>
+            <h3>Crescimento estável no mercado financeiro</h3>
+            <p>
+                O mercado financeiro registrou um crescimento estável nos últimos meses. Analistas apontam as principais tendências econômicas.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+        <article>
+            <img src="./imagens/economia2.jpg" alt="Bolsa de valores" />
+            <header>
+                <time>19/07/2022 às 12:15</time>
+            </header>
+            <h3>Ações de empresas de tecnologia em alta</h3>
+            <p>
+                As ações de diversas empresas de tecnologia estão em alta no mercado. Investidores buscam oportunidades nesse setor em crescimento.
+            </p>
+            <a href="#" title="Leia a notícia completa">Ler mais</a>
+        </article>
+    </section>
+</body>
+</html>
