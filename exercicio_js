@@ -1,0 +1,8 @@
+// script.js
+function calculaArea(base, altura) {
+    return base * altura;
+}
+
+// Exemplo de uso da função
+const areaRetangulo = calculaArea(10, 5);
+console.log(`A área do retângulo é: ${areaRetangulo}`);
