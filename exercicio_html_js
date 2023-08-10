@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Formulário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 100px;
+        }
+
+        input {
+            width: 100px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Validação de Formulário</h1>
+    <form id="myForm">
+        <label for="campoA">Campo A:</label>
+        <input type="number" id="campoA" name="campoA" required>
+        <br>
+        <label for="campoB">Campo B:</label>
+        <input type="number" id="campoB" name="campoB" required>
+        <br>
+        <button type="button" id="submitBtn">Enviar</button>
+    </form>
+    <p id="result"></p>
+    <script>
+        const submitBtn = document.getElementById('submitBtn');
+        const resultMessage = document.getElementById('result');
+
+        submitBtn.addEventListener('click', function() {
+            const campoA = parseFloat(document.getElementById('campoA').value);
+            const campoB = parseFloat(document.getElementById('campoB').value);
+
+            if (campoB > campoA) {
+                resultMessage.textContent = 'Formulário válido! B é maior que A.';
+                resultMessage.style.color = 'green';
+            } else {
+                resultMessage.textContent = 'Formulário inválido! B deve ser maior que A.';
+                resultMessage.style.color = 'red';
+            }
+        });
+    </script>
+</body>
+</html>
