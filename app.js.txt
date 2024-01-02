@@ -1,0 +1,16 @@
+$(document).ready(function() {
+  // Função para adicionar uma nova tarefa
+  $('#taskForm').submit(function(event) {
+    event.preventDefault();
+    var taskName = $('#taskInput').val();
+    if (taskName.trim() !== '') {
+      $('#taskList').append('<li>' + taskName + '</li>');
+      $('#taskInput').val('');
+    }
+  });
+
+  // Função para aplicar o efeito de linha ao clicar em um item da lista
+  $('#taskList').on('click', 'li', function() {
+    $(this).toggleClass('completed');
+  });
+});
